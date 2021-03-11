@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="生活,学习,代码,博客" />
+   
+  <meta name="description" content="前行" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    静态网页书写的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了 |  前行
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-静态网页书写的亿点细节"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  静态网页书写的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/" class="article-date">
+  <time datetime="2021-03-10T11:31:09.417Z" itemprop="datePublished">2021-03-10</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="1-亿些-class-的命名（目前学习中常会用到的一些）"><a href="#1-亿些-class-的命名（目前学习中常会用到的一些）" class="headerlink" title="1.亿些 class 的命名（目前学习中常会用到的一些）"></a>1.亿些 class 的命名（目前学习中常会用到的一些）</h1><ul>
+<li><h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><ul>
+<li><h3 id="header—网页头部"><a href="#header—网页头部" class="headerlink" title="header—网页头部"></a>header—网页头部</h3></li>
+<li><h3 id="shortcut—快捷导航（网页头部搜索栏）"><a href="#shortcut—快捷导航（网页头部搜索栏）" class="headerlink" title="shortcut—快捷导航（网页头部搜索栏）"></a>shortcut—快捷导航（网页头部搜索栏）</h3></li>
+<li><h3 id="banner—网页广告区域（轮播图…）"><a href="#banner—网页广告区域（轮播图…）" class="headerlink" title="banner—网页广告区域（轮播图…）"></a>banner—网页广告区域（轮播图…）</h3></li>
+<li><h3 id="nav—网页导航区域"><a href="#nav—网页导航区域" class="headerlink" title="nav—网页导航区域"></a>nav—网页导航区域</h3></li>
+<li><h3 id="aside—侧边栏"><a href="#aside—侧边栏" class="headerlink" title="aside—侧边栏"></a>aside—侧边栏</h3></li>
+<li><h3 id="main—网页主要内容"><a href="#main—网页主要内容" class="headerlink" title="main—网页主要内容"></a>main—网页主要内容</h3></li>
+<li><h3 id="footer—网页底部"><a href="#footer—网页底部" class="headerlink" title="footer—网页底部"></a>footer—网页底部</h3></li>
+</ul>
+<span id="more"></span></li>
+<li><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ul>
+<li><h3 id="logo—网页的徽标（一般用-h1-包括）"><a href="#logo—网页的徽标（一般用-h1-包括）" class="headerlink" title="logo—网页的徽标（一般用 h1 包括）"></a>logo—网页的徽标（一般用 h1 包括）</h3></li>
+<li><h3 id="login—登录"><a href="#login—登录" class="headerlink" title="login—登录"></a>login—登录</h3></li>
+<li><h3 id="register—注册"><a href="#register—注册" class="headerlink" title="register—注册"></a>register—注册</h3></li>
+<li><h3 id="hot—热搜"><a href="#hot—热搜" class="headerlink" title="hot—热搜"></a>hot—热搜</h3></li>
+<li><h3 id="news—新闻"><a href="#news—新闻" class="headerlink" title="news—新闻"></a>news—新闻</h3></li>
+<li><h3 id="icon—小图标"><a href="#icon—小图标" class="headerlink" title="icon—小图标"></a>icon—小图标</h3></li>
+<li><h3 id="search—搜索"><a href="#search—搜索" class="headerlink" title="search—搜索"></a>search—搜索</h3></li>
+<li><h3 id="service—服务"><a href="#service—服务" class="headerlink" title="service—服务"></a>service—服务</h3></li>
+<li><h3 id="btn—按钮"><a href="#btn—按钮" class="headerlink" title="btn—按钮"></a>btn—按钮</h3></li>
+</ul>
+</li>
+</ul>
+<h1 id="2-浮动带来的亿些负面影响"><a href="#2-浮动带来的亿些负面影响" class="headerlink" title="2.浮动带来的亿些负面影响"></a>2.浮动带来的亿些负面影响</h1><ul>
+<li><blockquote>
+<p>浮动元素的父元素没有设置确定的高度的话，</p>
+<p>那么子元素浮动后是不会撑开父盒子的，</p>
+<p>如果不清除浮动父盒子是没有高度的，</p>
+<p>其后的标准流盒子会紧贴在 0 高度的父盒子之下。</p>
+<p>ps：浮动元素是不会遮盖文字的</p>
+</blockquote>
+<img src="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/float.jpg" class="" title="This is an test image">
+
+<!-- ![float](./静态网页书写的亿点细节/float.jpg) -->
+
+<img src="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/%E6%96%87%E5%AD%97%E7%8E%AF%E7%BB%95.jpg" class="" title="This is an test image">
+
+<!-- ![文字环绕](./静态网页书写的亿点细节/文字环绕.jpg) --></li>
+<li><h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><ul>
+<li><h3 id="1-清除浮动就是清除浮动带来的弊端"><a href="#1-清除浮动就是清除浮动带来的弊端" class="headerlink" title="1.清除浮动就是清除浮动带来的弊端"></a>1.清除浮动就是清除浮动带来的弊端</h3></li>
+<li><h3 id="2-原理："><a href="#2-原理：" class="headerlink" title="2.原理："></a>2.原理：</h3><blockquote>
+<p>在<strong>父元素</strong>中添加一个<strong>块级</strong>元素来闭合浮动</p>
+<p>语法：选择器{clear：both；}（一般是 both—同时清除左右两侧浮动的影响）</p>
+</blockquote>
+</li>
+<li><h3 id="3-方法"><a href="#3-方法" class="headerlink" title="3.方法"></a>3.方法</h3><blockquote>
+<ol>
+<li>添加额外标签</li>
+</ol>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">给父元素内最后一个浮动元素的后面添加一个块级元素</span></span><br><span class="line"><span class="comment">在那个块级元素css样式上添加clear属性和both属性值</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ol start="2">
+<li>父元素添加 overflow：hidden；—通过触发浏览器<strong>块级格式化上下文</strong>机制清除浮动</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>伪元素法</li>
+</ol>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span>:after &#123;</span><br><span class="line">  content: <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">  <span class="attribute">visibility</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ol start="4">
+<li>双伪元素法</li>
+</ol>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span>:before,</span><br><span class="line">.clearfix:after &#123;</span><br><span class="line">  content: <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  <span class="attribute">display</span>: table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span>:after &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.jpg" class="" title="This is an test image">
+
+<!-- ![清除浮动](./静态网页书写的亿点细节/清除浮动.jpg) --></li>
+</ul>
+</li>
+</ul>
+<h1 id="3-亿些小-tips"><a href="#3-亿些小-tips" class="headerlink" title="3.亿些小 tips"></a>3.亿些小 tips</h1><ul>
+<li><h3 id="1-chrome-中，浏览默认字体大小-16px，最小字体-12px，可以通过设置更改默认的字体和最小字体（存在比例缩放时字体最小固定-12px-影响布局的情况可以更改设置），整-0px-时字体消失，负值时-CSS-样式失效"><a href="#1-chrome-中，浏览默认字体大小-16px，最小字体-12px，可以通过设置更改默认的字体和最小字体（存在比例缩放时字体最小固定-12px-影响布局的情况可以更改设置），整-0px-时字体消失，负值时-CSS-样式失效" class="headerlink" title="1. chrome 中，浏览默认字体大小 16px，最小字体 12px，可以通过设置更改默认的字体和最小字体（存在比例缩放时字体最小固定 12px 影响布局的情况可以更改设置），整 0px 时字体消失，负值时 CSS 样式失效"></a>1. chrome 中，浏览默认字体大小 16px，最小字体 12px，可以通过设置更改默认的字体和最小字体（存在比例缩放时字体最小固定 12px 影响布局的情况可以更改设置），整 0px 时字体消失，负值时 CSS 样式失效</h3></li>
+<li><h3 id="2-行内块元素（如-img，input）"><a href="#2-行内块元素（如-img，input）" class="headerlink" title="2.行内块元素（如 img，input）"></a>2.行内块元素（如 img，input）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;saber.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">如此换行排列，换行也会合并成一个空格，就导致了行内块元素之间会存在间隙;</span></span><br><span class="line"><span class="comment">并且在行内块元素和文字对齐时候是默认基线对齐的，所以会出现错位情况;</span></span><br><span class="line"><span class="comment">PS:下图图片其实是和input表单控件中的文字基线对齐的</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/%E7%A9%BA%E6%A0%BC.jpg" class="" title="This is an test image">
+
+<!-- ![空格](./静态网页书写的亿点细节/空格.jpg) -->
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;saber.jpg&quot;</span> <span class="attr">style</span>=<span class="string">&quot;vertical-align: middle;&quot;</span> /&gt;</span>&lt;input</span><br><span class="line">  type=&quot;text&quot;</span><br><span class="line">  value=&quot;saber&quot;</span><br><span class="line">/&gt;</span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">	如果两个标签并排不空格，则不会出现空隙；</span></span><br><span class="line"><span class="comment">	通过给需要的标签添加vertical-align:属性值;可以改变和文字的对齐方式</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/middle.jpg" class="" title="This is an test image">
+
+<!-- ![middle](./静态网页书写的亿点细节/middle.jpg) --></li>
+<li><h3 id="3-网页中的-logo-和新闻标题会用-h1-标签，logo-使用背景图，中间添加文字（用于-seo-优化），文字影藏可以是溢出影藏，或者文字-font-size-为-0，来不影响-logo-图片的美观，其它情况则从-h2-开始用"><a href="#3-网页中的-logo-和新闻标题会用-h1-标签，logo-使用背景图，中间添加文字（用于-seo-优化），文字影藏可以是溢出影藏，或者文字-font-size-为-0，来不影响-logo-图片的美观，其它情况则从-h2-开始用" class="headerlink" title="3.网页中的 logo 和新闻标题会用 h1 标签，logo 使用背景图，中间添加文字（用于 seo 优化），文字影藏可以是溢出影藏，或者文字 font-size 为 0，来不影响 logo 图片的美观，其它情况则从 h2 开始用"></a>3.网页中的 logo 和新闻标题会用 h1 标签，logo 使用背景图，中间添加文字（用于 seo 优化），文字影藏可以是溢出影藏，或者文字 font-size 为 0，来不影响 logo 图片的美观，其它情况则从 h2 开始用</h3></li>
+<li><h3 id="4-书写好习惯，添加类名，添加类名，添加类名，不然标签一多，一些常用的标签的样式很容易出现层叠现象"><a href="#4-书写好习惯，添加类名，添加类名，添加类名，不然标签一多，一些常用的标签的样式很容易出现层叠现象" class="headerlink" title="4.书写好习惯，添加类名，添加类名，添加类名，不然标签一多，一些常用的标签的样式很容易出现层叠现象"></a>4.书写好习惯，添加类名，添加类名，添加类名，不然标签一多，一些常用的标签的样式很容易出现层叠现象</h3></li>
+<li><h3 id="5-写代码记得保存，写代码记得保存，写代码记得保存，代码不保存时会处于内存中，一旦掉电就没有了，所以一定要及时保存"><a href="#5-写代码记得保存，写代码记得保存，写代码记得保存，代码不保存时会处于内存中，一旦掉电就没有了，所以一定要及时保存" class="headerlink" title="5.写代码记得保存，写代码记得保存，写代码记得保存，代码不保存时会处于内存中，一旦掉电就没有了，所以一定要及时保存"></a>5.写代码记得保存，写代码记得保存，写代码记得保存，代码不保存时会处于内存中，一旦掉电就没有了，所以一定要及时保存</h3></li>
+<li><h3 id="6-利用行高居中时，line-height-是-content（内容）高度，通过-box-sizing-border-box-代码后-height-是实际盒子高度"><a href="#6-利用行高居中时，line-height-是-content（内容）高度，通过-box-sizing-border-box-代码后-height-是实际盒子高度" class="headerlink" title="6.利用行高居中时，line-height 是 content（内容）高度，通过 box-sizing: border-box;代码后 height 是实际盒子高度"></a>6.利用行高居中时，line-height 是 content（内容）高度，通过 box-sizing: border-box;代码后 height 是实际盒子高度</h3></li>
+<li><h3 id="7-定位时是依据内容（content）的位置移动的（在边框之内）"><a href="#7-定位时是依据内容（content）的位置移动的（在边框之内）" class="headerlink" title="7.定位时是依据内容（content）的位置移动的（在边框之内）"></a>7.定位时是依据内容（content）的位置移动的（在边框之内）</h3><img src="/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/%E5%AE%9A%E4%BD%8D.jpg" class="" title="This is an test image">
+
+<!-- ![定位](./静态网页书写的亿点细节/定位.jpg) --></li>
+<li><h3 id="8-伪类中的结构伪类-first-child、-last-child、-nth-child"><a href="#8-伪类中的结构伪类-first-child、-last-child、-nth-child" class="headerlink" title="8.伪类中的结构伪类:first-child、:last-child、:nth-child()"></a>8.伪类中的结构伪类:first-child、:last-child、:nth-child()</h3><blockquote>
+<p>均表示在父元素中<strong>所有</strong>子元素排序后存在的位置，如果添加结构伪类的元素<strong>排位和代码给的排位顺序不符合</strong>则 css 样式将不在该元素上生效</p>
+<p>此时可以用:nth-of-type()，表示<strong>添加伪类的这一类元素</strong>在父元素中排序后的位置</p>
+</blockquote>
+</li>
+<li><h3 id="9-弹性盒子（display：flex；）中只有设置换行（flex-wrap：warp；—默认不换行），才能换行"><a href="#9-弹性盒子（display：flex；）中只有设置换行（flex-wrap：warp；—默认不换行），才能换行" class="headerlink" title="9.弹性盒子（display：flex；）中只有设置换行（flex-wrap：warp；—默认不换行），才能换行"></a>9.弹性盒子（display：flex；）中只有设置换行（flex-wrap：warp；—默认不换行），才能换行</h3></li>
+<li><h3 id="10-移动端书写时-viewport（视口）需要设置完全，书写不完全可能会出现屏幕缩小时内容一直缩小"><a href="#10-移动端书写时-viewport（视口）需要设置完全，书写不完全可能会出现屏幕缩小时内容一直缩小" class="headerlink" title="10.移动端书写时 viewport（视口）需要设置完全，书写不完全可能会出现屏幕缩小时内容一直缩小"></a>10.移动端书写时 viewport（视口）需要设置完全，书写不完全可能会出现屏幕缩小时内容一直缩小</h3></li>
+</ul>
+<hr>
+<h1 id="to-be-continue…"><a href="#to-be-continue…" class="headerlink" title="to be continue…"></a>to be continue…</h1> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://saberviolet-m.github.io/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/03/10/Web%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Web学习的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2021
+        <i class="ri-heart-fill heart_icon"></i> Saber violet
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="向前"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">相册</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+
+<script src="/js/clickBoom2.js"></script>
+
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1466597802&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+</body>
+
+</html>

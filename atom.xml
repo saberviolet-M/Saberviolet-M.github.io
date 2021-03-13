@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>向前</title>
+  
+  <subtitle>海到无边天作岸，山登绝顶我为峰</subtitle>
+  <link href="http://saberviolet-m.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://saberviolet-m.github.io/"/>
+  <updated>2021-03-11T00:23:33.882Z</updated>
+  <id>http://saberviolet-m.github.io/</id>
+  
+  <author>
+    <name>Saber violet</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>静态网页书写的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了</title>
+    <link href="http://saberviolet-m.github.io/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/"/>
+    <id>http://saberviolet-m.github.io/2021/03/10/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E4%B9%A6%E5%86%99%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/</id>
+    <published>2021-03-10T11:31:09.417Z</published>
+    <updated>2021-03-11T00:23:33.882Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;1-亿些-class-的命名（目前学习中常会用到的一些）&quot;&gt;&lt;a href=&quot;#1-亿些-class-的命名（目前学习中常会用到的一些）&quot; class=&quot;headerlink&quot; title=&quot;1.亿些 class 的命名（目前学习中常会用到的一些）&quot;&gt;&lt;/a&gt;1.亿些 class 的命名（目前学习中常会用到的一些）&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h2 id=&quot;布局&quot;&gt;&lt;a href=&quot;#布局&quot; class=&quot;headerlink&quot; title=&quot;布局&quot;&gt;&lt;/a&gt;布局&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;header—网页头部&quot;&gt;&lt;a href=&quot;#header—网页头部&quot; class=&quot;headerlink&quot; title=&quot;header—网页头部&quot;&gt;&lt;/a&gt;header—网页头部&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;shortcut—快捷导航（网页头部搜索栏）&quot;&gt;&lt;a href=&quot;#shortcut—快捷导航（网页头部搜索栏）&quot; class=&quot;headerlink&quot; title=&quot;shortcut—快捷导航（网页头部搜索栏）&quot;&gt;&lt;/a&gt;shortcut—快捷导航（网页头部搜索栏）&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;banner—网页广告区域（轮播图…）&quot;&gt;&lt;a href=&quot;#banner—网页广告区域（轮播图…）&quot; class=&quot;headerlink&quot; title=&quot;banner—网页广告区域（轮播图…）&quot;&gt;&lt;/a&gt;banner—网页广告区域（轮播图…）&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;nav—网页导航区域&quot;&gt;&lt;a href=&quot;#nav—网页导航区域&quot; class=&quot;headerlink&quot; title=&quot;nav—网页导航区域&quot;&gt;&lt;/a&gt;nav—网页导航区域&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;aside—侧边栏&quot;&gt;&lt;a href=&quot;#aside—侧边栏&quot; class=&quot;headerlink&quot; title=&quot;aside—侧边栏&quot;&gt;&lt;/a&gt;aside—侧边栏&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;main—网页主要内容&quot;&gt;&lt;a href=&quot;#main—网页主要内容&quot; class=&quot;headerlink&quot; title=&quot;main—网页主要内容&quot;&gt;&lt;/a&gt;main—网页主要内容&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;footer—网页底部&quot;&gt;&lt;a href=&quot;#footer—网页底部&quot; class=&quot;headerlink&quot; title=&quot;footer—网页底部&quot;&gt;&lt;/a&gt;footer—网页底部&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://saberviolet-m.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web学习的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了</title>
+    <link href="http://saberviolet-m.github.io/2021/03/10/Web%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/"/>
+    <id>http://saberviolet-m.github.io/2021/03/10/Web%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/</id>
+    <published>2021-03-10T11:31:09.415Z</published>
+    <updated>2020-12-20T09:26:18.845Z</updated>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;1-在js中需要number类型的数据可以在数据之前加“-”&quot;&gt;&lt;a href=&quot;#1-在js中需要number类型的数据可以在数据之前加“-”&quot; class=&quot;headerlink&quot; title=&quot;1.在js中需要number类型的数据可以在数据之前加“+”&quot;&gt;&lt;/a&gt;1.在js中需要number类型的数据可以在数据之前加“+”&lt;/h4&gt;&lt;img src=&quot;/2021/03/10/Web%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BF%E7%82%B9%E7%BB%86%E8%8A%82/number.jpg&quot; class=&quot;&quot; title=&quot;This is an test image&quot;&gt;
+&lt;!-- ![number](./Web学习的亿点细节/number.jpg) --&gt;
+&lt;h4 id=&quot;2-清空数组的操作&quot;&gt;&lt;a href=&quot;#2-清空数组的操作&quot; class=&quot;headerlink&quot; title=&quot;2.清空数组的操作&quot;&gt;&lt;/a&gt;2.清空数组的操作&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1、重新赋值为[]&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;arr = [];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2、设置数组长度为0&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;arr.length = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;3、把数组中的所有数据删除&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;arr.splice(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,arr.length);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://saberviolet-m.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS操作对象的14中方法</title>
+    <link href="http://saberviolet-m.github.io/2021/03/10/JS%E6%93%8D%E4%BD%9C%E5%AF%B9%E8%B1%A1%E7%9A%8414%E4%B8%AD%E6%96%B9%E6%B3%95/"/>
+    <id>http://saberviolet-m.github.io/2021/03/10/JS%E6%93%8D%E4%BD%9C%E5%AF%B9%E8%B1%A1%E7%9A%8414%E4%B8%AD%E6%96%B9%E6%B3%95/</id>
+    <published>2021-03-10T11:31:09.398Z</published>
+    <updated>2021-03-11T00:24:45.166Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;ECMAScript&lt;/strong&gt;委员会对对象操作有&lt;strong&gt;14&lt;/strong&gt;中方法（直接操作对象，跟对象操作有关方法）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JS 存在许多关键字形的指令，而许多底层方法都是函数式的，更容易读懂，也更容易维护&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://saberviolet-m.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://saberviolet-m.github.io/2021/03/10/hello-world/"/>
+    <id>http://saberviolet-m.github.io/2021/03/10/hello-world/</id>
+    <published>2021-03-10T11:31:09.394Z</published>
+    <updated>2020-09-11T14:22:19.008Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>层叠样式表——CSS</title>
+    <link href="http://saberviolet-m.github.io/2020/09/24/CSS/"/>
+    <id>http://saberviolet-m.github.io/2020/09/24/CSS/</id>
+    <published>2020-09-24T08:15:39.000Z</published>
+    <updated>2020-10-07T11:55:52.694Z</updated>
+    
+    
+    <summary type="html">&lt;!--  --&gt;
+&lt;h3 id=&quot;Ⅰ-CSS书写样式&quot;&gt;&lt;a href=&quot;#Ⅰ-CSS书写样式&quot; class=&quot;headerlink&quot; title=&quot;Ⅰ.CSS书写样式&quot;&gt;&lt;/a&gt;Ⅰ.CSS书写样式&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 行内式&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;/2020/09/24/CSS/%E8%A1%8C%E5%86%85%E5%BC%8Fcss.jpg&quot; class=&quot;&quot; title=&quot;This is an test image&quot;&gt;
+&lt;!-- ![](../_posts/CSS/行内式css.jpg) --&gt;
+&lt;p&gt;&lt;strong&gt;2. 内嵌式&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;/2020/09/24/CSS/%E5%86%85%E5%B5%8C%E5%BC%8Fcss.jpg&quot; class=&quot;&quot; title=&quot;This is an test image&quot;&gt;
+&lt;!-- ![](../_posts/CSS/内嵌式css.jpg) --&gt;
+&lt;p&gt;&lt;strong&gt;3. 外链式&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;/2020/09/24/CSS/%E5%A4%96%E9%93%BE%E5%BC%8Fcss.jpg&quot; class=&quot;&quot; title=&quot;This is an test image&quot;&gt;
+&lt;!-- ![](../_posts/CSS/外链式css.jpg) --&gt;
+
+&lt;hr&gt;
+&lt;img src=&quot;/2020/09/24/CSS/%E4%B9%A6%E5%86%99%E6%A0%B7%E5%BC%8F.jpg&quot; class=&quot;&quot; title=&quot;This is an test image&quot;&gt;
+&lt;!-- ![](../_posts/CSS/书写样式.jpg) --&gt;
+
+&lt;hr&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://saberviolet-m.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>超文本标记语言——HTML</title>
+    <link href="http://saberviolet-m.github.io/2020/09/16/label/"/>
+    <id>http://saberviolet-m.github.io/2020/09/16/label/</id>
+    <published>2020-09-16T08:34:47.000Z</published>
+    <updated>2020-09-16T08:34:35.130Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;html骨架&quot;&gt;&lt;a href=&quot;#html骨架&quot; class=&quot;headerlink&quot; title=&quot;html骨架&quot;&gt;&lt;/a&gt;html骨架&lt;/h3&gt;&lt;p&gt;!DOCTYPE html——文档类型[HTML 5]&lt;br&gt;html lang=”en”——语言显示&lt;br&gt;meta charset=”UTF-8”——编码规范[字符集]&lt;/p&gt;
+&lt;h3 id=&quot;标签语义化&quot;&gt;&lt;a href=&quot;#标签语义化&quot; class=&quot;headerlink&quot; title=&quot;标签语义化&quot;&gt;&lt;/a&gt;标签语义化&lt;/h3&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://saberviolet-m.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客的搭建整理总结</title>
+    <link href="http://saberviolet-m.github.io/2020/09/11/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <id>http://saberviolet-m.github.io/2020/09/11/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</id>
+    <published>2020-09-11T11:19:47.000Z</published>
+    <updated>2020-09-12T02:26:34.896Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;本次博客搭建教程来源如下&quot;&gt;&lt;a href=&quot;#本次博客搭建教程来源如下&quot; class=&quot;headerlink&quot; title=&quot;本次博客搭建教程来源如下:&quot;&gt;&lt;/a&gt;本次博客搭建教程来源如下:&lt;/h2&gt;&lt;img src=&quot;/2020/09/11/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/%E8%A7%86%E9%A2%91%E5%8F%82%E8%80%83.jpg&quot; class=&quot;&quot; title=&quot;This is an test image&quot;&gt;
+&lt;!-- ![](/source/_posts/hexo博客的搭建/视频参考.jpg) --&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1Yb411a7ty?t=1677&quot;&gt;手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="整理总结" scheme="http://saberviolet-m.github.io/tags/%E6%95%B4%E7%90%86%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+</feed>

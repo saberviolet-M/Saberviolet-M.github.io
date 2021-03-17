@@ -1,0 +1,139 @@
+---
+title: 'Web学习的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了'
+date: 2020年11月7日 08:56:49
+tags: 学习笔记
+---
+
+
+#### 1.在js中需要number类型的数据可以在数据之前加“+”
+{% asset_img number.jpg This is an test image %}
+<!-- ![number](./Web学习的亿点细节/number.jpg) -->
+#### 2.清空数组的操作
+- 1、重新赋值为[]
+
+  ```js
+  arr = [];
+  ```
+
+- 2、设置数组长度为0
+
+  ```js
+  arr.length = 0;
+  ```
+
+- 3、把数组中的所有数据删除
+
+  ```js
+  arr.splice(0,arr.length);
+  ```
+<!--more-->
+
+#### 3.Js赋值样式时需要添加单位
+```js
+let x = [变量值];
+element.style.width = x + 'px';
+```
+
+#### 4.querySelectorAll和children的区别
+- querySelectorAll：获取的元素集合是静态集合——拿到数据之后就不管之后的变化了
+- children：获取到的元素是动态集合——拿到数据之后还会动态更新数据
+
+#### 5.removeEventListener传入函数体是不能移除事件的，需要传入注册事件时相同函数的函数名（注册监听事件的事件函数不是函数体）
+```js
+addEventListener('click', function demo() {
+    console.log('123');
+})
+removeEventListener('click', function demo() {
+    console.log('123');
+})
+//这样是不能删除监听器注册事件的
+------------------------------------------------------
+function demo() {
+    console.log('123');
+}
+addEventListener('click', demo)
+removeEventListener('click', demo)
+//需要填入的是同一函数的函数名
+```
+
+#### 6.阻止a标签跳转的小手段
+`<a href="javascript:viod(0);"></a>`
+
+- href="javascript:viod(0);''---意思是不跳转，去执行js代码
+- js代码为空就间接的阻止了a标签的跳转
+
+#### 7.HTMLElement.offsetParent 是一个只读属性，返回一个指向最近的（指包含层级上的最近）包含该元素的定位元素或者最近的 table,td,th,body元素。当元素的 style.display 设置为 "none" 时，offsetParent 返回 null。offsetParent 很有用，因为 offsetTop 和 offsetLeft 都是相对于其内边距边界的。
+#### 8.通过constructor判断数据类型
+```js
+let arr = [];
+typeof arr//object
+arr instanceof Array//true
+arr.__proto__.constructor === Array//true
+arr.constructor === Array//true
+```
+#### 9.允许我们在function ()/ 箭头函数中, 对形参赋予默认值形参的默认值----当不传入参数的时候(形参的值是undefined), 会被默认值覆盖掉
+```js
+// 默认值作用: 防止在不传递参数时, 有问题
+// function fnOne(a, b){
+//     console.log(a + b);
+// }
+// fnOne();
+
+// 其实想在不传数字时, 默认是0+0, 但是现在是undefined相加(结果是NaN了)
+function fnOne(a = 0, b = 0) {
+    console.log(a + b);
+}
+fnOne();
+fnOne(10, 20);
+
+var fnTwo = (a = 0, b = 0) => {
+    console.log(a + b);
+}
+fnTwo();
+fnTwo(100, 200);
+```
+#### 10.对象中属性名的访问和值的访问
+```js
+let  obj = {}
+Object.keys(obj);//将所有key保存在数组里
+Object.values(obj);//将所有value保存在数组里
+```
+#### 11.JQuery中的输入框事件
+- JQuery中输入框事件(input)不是方法，需要如下方式使用
+
+  ```js
+  $('selector').on('input',function())
+  ```
+  #### 12.在定位中通过设置right和left为0可以使得定位元素宽度撑满定位标准的父盒子，top、bottom同理
+```html
+<div class="father">
+    <div class="son"></div>
+</div>
+```
+```css
+.father {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #000;
+}
+
+.son {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: red;
+}
+```
+{% asset_img 关于定位的小tip.jpg This is an test image %}
+<!-- ![关于定位的小tip](./Web学习的亿点细节/关于定位的小tip.jpg) -->
+#### 13.form表单会默认跳转到action属性对应的网址，不写默认会跳转自身，一般阻止表单默认跳转，e.preventDefault---阻止默认事件
+#### 14.在网页中复制DOM树
+{% asset_img copyDOMtree.jpg This is an test image %}
+<!-- ![copyDOMtree](./Web学习的亿点细节/copyDOMtree.jpg) -->
+{% asset_img DOMtree.jpg This is an test image %}
+<!-- ![DOMtree](./Web学习的亿点细节/DOMtree.jpg) -->
+
+#### 15.模本引擎语法支持字符串方法

@@ -6,7 +6,7 @@
   <link href="http://saberviolet-m.github.io/atom.xml" rel="self"/>
   
   <link href="http://saberviolet-m.github.io/"/>
-  <updated>2021-03-11T00:23:33.882Z</updated>
+  <updated>2021-03-24T09:02:57.156Z</updated>
   <id>http://saberviolet-m.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>作用域与闭包</title>
+    <link href="http://saberviolet-m.github.io/2021/03/24/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E9%97%AD%E5%8C%85/"/>
+    <id>http://saberviolet-m.github.io/2021/03/24/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E9%97%AD%E5%8C%85/</id>
+    <published>2021-03-24T07:12:06.000Z</published>
+    <updated>2021-03-24T09:02:57.156Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;环境与作用域&quot;&gt;&lt;a href=&quot;#环境与作用域&quot; class=&quot;headerlink&quot; title=&quot;环境与作用域&quot;&gt;&lt;/a&gt;环境与作用域&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在浏览器环境下，全局数据默认不会被回收，直到浏览器关闭&lt;/p&gt;
+&lt;p&gt;全局数据可以渗透到函数内部，被函数内部访问&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="http://saberviolet-m.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>静态网页书写的亿点细节---亿点点୧(๑•̀⌄•́๑)૭碉堡了</title>
@@ -86,21 +106,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://saberviolet-m.github.io/2021/03/10/hello-world/"/>
-    <id>http://saberviolet-m.github.io/2021/03/10/hello-world/</id>
-    <published>2021-03-10T11:31:09.394Z</published>
-    <updated>2020-09-11T14:22:19.008Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>层叠样式表——CSS</title>
     <link href="http://saberviolet-m.github.io/2020/09/24/CSS/"/>
     <id>http://saberviolet-m.github.io/2020/09/24/CSS/</id>
@@ -167,6 +172,21 @@
     
     
     <category term="整理总结" scheme="http://saberviolet-m.github.io/tags/%E6%95%B4%E7%90%86%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://saberviolet-m.github.io/2020/09/11/hello-world/"/>
+    <id>http://saberviolet-m.github.io/2020/09/11/hello-world/</id>
+    <published>2020-09-11T10:19:47.000Z</published>
+    <updated>2021-03-18T07:50:48.131Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
     
   </entry>
   

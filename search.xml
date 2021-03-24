@@ -399,7 +399,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2021/03/10/hello-world/</url>
+    <url>/2020/09/11/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <span id="more"></span>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -750,6 +750,79 @@
 </ul>
 <hr>
 <h1 id="to-be-continue…"><a href="#to-be-continue…" class="headerlink" title="to be continue…"></a>to be continue…</h1>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作用域与闭包</title>
+    <url>/2021/03/24/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E9%97%AD%E5%8C%85/</url>
+    <content><![CDATA[<h2 id="环境与作用域"><a href="#环境与作用域" class="headerlink" title="环境与作用域"></a>环境与作用域</h2><blockquote>
+<p>在浏览器环境下，全局数据默认不会被回收，直到浏览器关闭</p>
+<p>全局数据可以渗透到函数内部，被函数内部访问</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="函数的环境与作用域"><a href="#函数的环境与作用域" class="headerlink" title="函数的环境与作用域"></a>函数的环境与作用域</h3><ul>
+<li><p>函数体内定义的数据默认在函数内部使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exam</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span></span><br><span class="line">  <span class="keyword">let</span> b = <span class="number">2</span></span><br><span class="line">  <span class="keyword">const</span> c = <span class="number">3</span></span><br><span class="line">  <span class="built_in">console</span>.log(a) <span class="comment">// 1</span></span><br><span class="line">  <span class="built_in">console</span>.log(b) <span class="comment">// 2</span></span><br><span class="line">  <span class="built_in">console</span>.log(c) <span class="comment">// 3</span></span><br><span class="line">&#125;</span><br><span class="line">exam()</span><br><span class="line"><span class="built_in">console</span>.log(a, b, c) <span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure></li>
+<li><p>子级函数内定义数据不会向父级传递，但可以访问父级数据</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exam</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">2</span></span><br><span class="line">    <span class="built_in">console</span>.log(a) <span class="comment">// 1</span></span><br><span class="line">  &#125;</span><br><span class="line">  test()</span><br><span class="line">  <span class="built_in">console</span>.log(b) <span class="comment">// Uncaught ReferenceError: b is not defined at exam</span></span><br><span class="line">&#125;</span><br><span class="line">exam()</span><br></pre></td></tr></table></figure></li>
+<li><p>函数不调用不开辟空间</p>
+</li>
+<li><p>函数调用一次，开辟一次空间，每次都不相同</p>
+</li>
+<li><p>函数运行结束，内部数据未被使用则释放空间</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exam</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> n = <span class="number">1</span></span><br><span class="line">  <span class="built_in">console</span>.log(++n)</span><br><span class="line">&#125;</span><br><span class="line">exam() <span class="comment">// 2</span></span><br><span class="line">exam() <span class="comment">// 2</span></span><br><span class="line">exam() <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></li>
+<li><p>若函数内部存在数据被使用则不释放空间</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> n = <span class="number">1</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(++n)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> run = test()</span><br><span class="line">run() <span class="comment">// 2</span></span><br><span class="line">run() <span class="comment">// 3</span></span><br><span class="line">run() <span class="comment">// 4</span></span><br><span class="line">run() <span class="comment">// 5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="构造函数中作用域形态"><a href="#构造函数中作用域形态" class="headerlink" title="构造函数中作用域形态"></a>构造函数中作用域形态</h3><ul>
+<li><p><code>new</code>会开辟空间存放数据，在实例销毁之前，对实例数据的更改都会反映在构建的内存空间中</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> n = <span class="number">1</span></span><br><span class="line">  <span class="built_in">this</span>.sum = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(++n)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> a = <span class="keyword">new</span> Fn()</span><br><span class="line">a.sum() <span class="comment">// 2</span></span><br><span class="line">a.sum() <span class="comment">// 3</span></span><br><span class="line">a.sum() <span class="comment">// 4</span></span><br><span class="line">a.sum() <span class="comment">// 5</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h3><blockquote>
+<p>es6中定义的let、const为块级作用域</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">3</span></span><br><span class="line">  <span class="built_in">console</span>.log(a) <span class="comment">// 3</span></span><br><span class="line">&#125;</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> b = <span class="number">2</span></span><br><span class="line">  <span class="built_in">console</span>.log(b) <span class="comment">// 2</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a) <span class="comment">// 3</span></span><br><span class="line"><span class="built_in">console</span>.log(b) <span class="comment">// ReferenceError: b is not defined</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="for中的var、let"><a href="#for中的var、let" class="headerlink" title="for中的var、let"></a>for中的var、let</h4><ul>
+<li><p>for 自带块级特性</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(i) <span class="comment">// 0 1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>; j++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(j) <span class="comment">// 0 1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(i) <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(j) <span class="comment">// j is not defined</span></span><br></pre></td></tr></table></figure></li>
+<li><p>由于<code>var</code>不存在块级作用域，在存在定时器等特殊状况的情况下得不到预期结果</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i) <span class="comment">// 2 2</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>; j++) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(j) <span class="comment">// 0 1</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(i) <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>var</code>表示在全局定义数据<code>i</code>，在定时器函数构建的空间中不会存储变量<code>i</code>而是从父级作用域中取值</p>
+<p><code>for</code>作为同步代码先行执行后<code>i=2</code>，等定时器函数运行时<code>i</code>已经被赋值为2</p>
+<p><code>let</code>具备块作用域，定时函数在构建空间存储时会将当前<code>i</code>的值保存在自己的作用域空间中，使用时先从自身作用域空间查找使用</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="模拟出var的块级作用域"><a href="#模拟出var的块级作用域" class="headerlink" title="模拟出var的块级作用域"></a>模拟出var的块级作用域</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt;= <span class="number">3</span>; i++) &#123;</span><br><span class="line">  (<span class="function"><span class="keyword">function</span> (<span class="params">i</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(i) <span class="comment">// 0 1 2 3</span></span><br><span class="line">    &#125;, <span class="number">1000</span>)</span><br><span class="line">  &#125;)(i)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;window.i&#x27;</span>,i) <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>利用自调用函数将循环中的<code>i</code>作为实参传递(实际是建立了循环次数**(4次)**的新函数作用域空间)</p>
+<p>定时器函数构建作用域空间时会携带<strong>每次传递来的实参</strong>作为自身参数</p>
+</blockquote>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><blockquote>
+<p>函数可以访问其他函数作用域内的数据</p>
+</blockquote>
+<h3 id="闭包运用之数组区间"><a href="#闭包运用之数组区间" class="headerlink" title="闭包运用之数组区间"></a>闭包运用之数组区间</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">45</span>,<span class="number">66</span>,<span class="number">5</span>,<span class="number">63</span>,<span class="number">345</span>,<span class="number">4251</span>,<span class="number">3</span>]</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">between</span>(<span class="params">start,end</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value&gt;= start &amp;&amp; value&lt;=end</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr.filter(between(<span class="number">5</span>,<span class="number">100</span>))) <span class="comment">// [45, 66, 5, 63]</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>filter</code>需要一个回调函数</p>
+<p>建立函数<code>between</code>返回<code>filter</code>需要的回调函数</p>
+<p>由于作用域问题，在回调函数执行时获取父级作用域空间的数据的（即形成闭包）</p>
+<p>因此传递实参给<code>between</code>以达到控制数组区间的目的</p>
+</blockquote>
+<h3 id="闭包的内存泄漏"><a href="#闭包的内存泄漏" class="headerlink" title="闭包的内存泄漏"></a>闭包的内存泄漏</h3><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;button desc=<span class="string">&quot;storage&quot;</span>&gt;内存&lt;/button&gt;</span><br><span class="line">  &lt;button desc=<span class="string">&quot;leak&quot;</span>&gt;泄漏&lt;/button&gt;</span><br><span class="line">  &lt;button desc=<span class="string">&quot;problem&quot;</span>&gt;问题&lt;/button&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    <span class="keyword">let</span> btns = <span class="built_in">document</span>.querySelectorAll(<span class="string">&#x27;button&#x27;</span>)</span><br><span class="line">    btns.forEach(<span class="function"><span class="params">item</span>=&gt;</span>&#123;</span><br><span class="line">      <span class="keyword">let</span> desc = item.getAttribute(<span class="string">&#x27;desc&#x27;</span>)</span><br><span class="line">      item.addEventListener(<span class="string">&#x27;click&#x27;</span>,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;desc:&#x27;</span>,desc)</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;item:&#x27;</span>,item)</span><br><span class="line">      &#125;)</span><br><span class="line">      item = <span class="literal">null</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>由于函数内数据使用时不释放内存的原因，对于事件处理函数中会存储DOM对象本身，对于只需要获取特定数据的操作来说，无疑导致了大量的内存浪费，过多的事件处理函数可能导致内存泄漏问题</p>
+<p>因此在事件处理函数之外获取数据，通过闭包可以在事件处理函数中获取数据，之后在手动释放内存空间，以达到优化程序的作用</p>
+</blockquote>
+]]></content>
       <tags>
         <tag>学习笔记</tag>
       </tags>

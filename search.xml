@@ -911,6 +911,8 @@
 </ul>
 </li>
 </ul>
+<span id="more"></span>
+
 <h2 id="行-列-的间隔"><a href="#行-列-的间隔" class="headerlink" title="行(列)的间隔"></a>行(列)的间隔</h2><ul>
 <li><code>grid-row(column)-gap: 10px</code></li>
 <li><code>gap: 10px [20px]</code></li>
@@ -996,6 +998,10 @@
 <li>うち – （原关西方言，现女性使用）</li>
 </ul>
 </li>
+</ul>
+<span id="more"></span>
+
+<ul>
 <li>第二人称<ul>
 <li>あなた – 避免对上级使用 （有‘亲爱的’，夫妻间）</li>
 <li>君 – （男性） 对同辈或晚辈使用</li>

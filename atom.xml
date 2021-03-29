@@ -49,13 +49,9 @@
     <link href="http://saberviolet-m.github.io/2021/03/28/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8803%EF%BC%89/"/>
     <id>http://saberviolet-m.github.io/2021/03/28/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8803%EF%BC%89/</id>
     <published>2021-03-28T09:07:18.009Z</published>
-    <updated>2021-03-28T09:08:36.783Z</updated>
+    <updated>2021-03-29T06:50:34.293Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;第一人称&lt;ul&gt;
 &lt;li&gt;私（わたし）  – 女性（生活中）– 男女通用（正事）&lt;/li&gt;
@@ -63,9 +59,11 @@
 &lt;li&gt;僕 – 男&lt;/li&gt;
 &lt;li&gt;俺 – 上对下&lt;/li&gt;
 &lt;li&gt;俺様 – 男&lt;/li&gt;
-&lt;li&gt;あたし –</summary>
-        
-      
+&lt;li&gt;あたし – 女&lt;/li&gt;
+&lt;li&gt;うち – （原关西方言，现女性使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -79,17 +77,28 @@
     <link href="http://saberviolet-m.github.io/2021/03/26/grid%E6%A0%85%E6%A0%BC%E5%B8%83%E5%B1%80/"/>
     <id>http://saberviolet-m.github.io/2021/03/26/grid%E6%A0%85%E6%A0%BC%E5%B8%83%E5%B1%80/</id>
     <published>2021-03-26T07:55:01.699Z</published>
-    <updated>2021-03-26T07:59:32.995Z</updated>
+    <updated>2021-03-29T06:50:17.634Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;开启grid容器&quot;&gt;&lt;a href=&quot;#开启grid容器&quot; class=&quot;headerlink&quot; title=&quot;开启grid容器&quot;&gt;&lt;/a&gt;开启grid容器&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;display:</summary>
-        
-      
+&lt;li&gt;&lt;code&gt;display: grid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display: inline-grid&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;容器划分&quot;&gt;&lt;a href=&quot;#容器划分&quot; class=&quot;headerlink&quot; title=&quot;容器划分&quot;&gt;&lt;/a&gt;容器划分&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows(columns): [数字]px 100px 200px 50px&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows(columns): [百分比]% 33% 33% 1%&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows(columns): [百分比]% 33% 33% 1%&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows(columns): repeat([重复的次数], 重复的值)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows(columns): repeat(2, 100px 200px 50px)&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;第&lt;strong&gt;一&lt;/strong&gt;行(列)和第&lt;strong&gt;四&lt;/strong&gt;行(列)的宽度&lt;code&gt;100px&lt;/code&gt;&lt;strong&gt;二&lt;/strong&gt;行(列)和第&lt;strong&gt;五&lt;/strong&gt;行(列&lt;code&gt;20px&lt;/code&gt;&lt;strong&gt;三&lt;/strong&gt;行(列)和第&lt;strong&gt;六&lt;/strong&gt;行(列)为&lt;code&gt;80px&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;auto-fill&lt;/code&gt;关键字表示自动填充(每个格子大小一定的情况下尽可能的占据一行的空间)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fr&lt;/code&gt;关键字 (fraction - 片段)–比例分配剩余的容器空间&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows(columns): 200px 1fr 2fr&lt;/code&gt;–第一格占据200px，第二格占据剩下的1/3，第三格占据剩下的2/3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     

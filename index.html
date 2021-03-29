@@ -260,50 +260,11 @@
 <li>うち – （原关西方言，现女性使用）</li>
 </ul>
 </li>
-<li>第二人称<ul>
-<li>あなた – 避免对上级使用 （有‘亲爱的’，夫妻间）</li>
-<li>君 – （男性） 对同辈或晚辈使用</li>
-<li>お前 – （男性）同辈或晚辈（更随意）</li>
-<li>あんた – （あなた 演化而来，礼貌程度比あなた 低）</li>
-<li>僕 – （对不认识的小孩可能会用）</li>
-</ul>
-</li>
-<li>第三人称<ul>
-<li>人：<ul>
-<li>彼（他）　彼女（他）　こ（这）/そ（那）/あ（那）+ いつ（家伙）</li>
-</ul>
-</li>
-<li>物：<ul>
-<li>こ（这）/そ（那）/あ（那）/ど（哪）+れ（个）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>复数表现<ul>
-<li>私たち　– 礼貌程度（中性，不表现尊敬，不表现不尊敬）</li>
-<li>あなたがた   –礼貌程度（高）</li>
-<li>彼ら  – 礼貌程度（低）他们</li>
-<li>彼女たち/ら – 她们</li>
-<li>私ども – 自谦（礼貌程度很高）</li>
-</ul>
-</li>
-<li>敬称<ul>
-<li>様（店家常用）　</li>
-<li>さん（平时常用）　</li>
-<li>君（同辈晚辈，工作场合女性也可）　</li>
-<li>ちゃん（亲昵）殿（古老的感觉，称谓+殿，上对下）　</li>
-<li>氏（姓氏+氏表尊敬）</li>
-</ul>
-</li>
-<li>呼び捨て<ul>
-<li>姓（名字），舍去结尾敬称<ul>
-<li>表现为上对下时，圈子内对圈子外提及圈子内（例如公司和公司之间，向对方提及自身公司内部人员时不加敬称–[日本语言文化传统]）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
- 
+</ul> 
+      <a class="article-more-link" href="/2021/03/28/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8803%EF%BC%89/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -368,74 +329,11 @@
 <li><code>grid-template-rows(columns): 200px 1fr 2fr</code>–第一格占据200px，第二格占据剩下的1/3，第三格占据剩下的2/3</li>
 </ul>
 </li>
-</ul>
-<h2 id="行-列-的间隔"><a href="#行-列-的间隔" class="headerlink" title="行(列)的间隔"></a>行(列)的间隔</h2><ul>
-<li><code>grid-row(column)-gap: 10px</code></li>
-<li><code>gap: 10px [20px]</code></li>
-</ul>
-<h2 id="放置位置"><a href="#放置位置" class="headerlink" title="放置位置"></a>放置位置</h2><h3 id="根据编号放置位置"><a href="#根据编号放置位置" class="headerlink" title="根据编号放置位置"></a>根据编号放置位置</h3><ul>
-<li><code>rows</code> 从上往下<strong>第一根</strong>线表示<code>(编号)1</code><strong>往下</strong>依次递增</li>
-<li><code>columns</code> 从左往右<strong>第一根</strong>线表示<code>(编号)1</code><strong>往下</strong>依次递增</li>
-<li><code>grid-row(column)-start:1</code> – (编号)1开始</li>
-<li><code>grid-row(column)-end:2</code> – (编号)2结束</li>
-</ul>
-<h3 id="固定命名放放位置"><a href="#固定命名放放位置" class="headerlink" title="固定命名放放位置"></a>固定命名放放位置</h3><h3 id="填入每行-列-数据时的命名"><a href="#填入每行-列-数据时的命名" class="headerlink" title="填入每行(列)数据时的命名"></a>填入每行(列)数据时的命名</h3><ul>
-<li><code>grid-template-rows(columns): [(1号线别名:row1的开始)r1s] 1fr [r1e(row1的结束) r2s(row2的开始)] 1fr [r2e r3s] 1fr [r3e]</code> </li>
-</ul>
-<h3 id="repeat重复设置时的命名"><a href="#repeat重复设置时的命名" class="headerlink" title="repeat重复设置时的命名"></a>repeat重复设置时的命名</h3><ul>
-<li><code>grid-template-rows(columns): repeat(3,[rs] 1fr [re]);</code></li>
-<li>使用<ul>
-<li><code>grid-row-start: rs 2(编号2的线作为开始);grid-row-end(编号4的线作为结束): re 4;</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="根据偏移量放位置"><a href="#根据偏移量放位置" class="headerlink" title="根据偏移量放位置"></a>根据偏移量放位置</h3><ul>
-<li><code>grid-row-end: span 2(到结束偏移两根线);</code></li>
-</ul>
-<h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><ul>
-<li><code>grid-row(column): 1(编号1的线开始) / 2(编号2的线结束);</code></li>
-<li><code>grid-row(column): 1(编号1的线开始) / span 2(填充两根线的内容));</code></li>
-</ul>
-<h2 id="区域定位"><a href="#区域定位" class="headerlink" title="区域定位"></a>区域定位</h2><ul>
-<li><code>grid-area: [行开始]/[列开始]/[行结束]/[列结束]</code></li>
-</ul>
-<h3 id="area布局"><a href="#area布局" class="headerlink" title="area布局"></a>area布局</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">display</span>: grid;</span><br><span class="line">grid-template-rows: <span class="number">60px</span> <span class="number">1</span>fr <span class="number">60px</span>;</span><br><span class="line">grid-template-<span class="attribute">columns</span>: <span class="number">60px</span> <span class="number">1</span>fr;</span><br><span class="line">grid-template-areas: <span class="string">&quot;header header&quot;</span> /* 占据的区域的边线会被命名为 header-start header-end */</span><br><span class="line">  <span class="string">&quot;nav main&quot;</span></span><br><span class="line">  <span class="string">&quot;footer footer&quot;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用时<code>grid-area: [区域名称]header</code></li>
-</ul>
-<h3 id="area布局优化"><a href="#area布局优化" class="headerlink" title="area布局优化"></a>area布局优化</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">display</span>: grid;</span><br><span class="line">grid-template-rows: <span class="number">60px</span> <span class="number">1</span>fr <span class="number">60px</span>;</span><br><span class="line">grid-template-<span class="attribute">columns</span>: <span class="number">60px</span> <span class="number">1</span>fr;</span><br><span class="line">grid-template-areas: <span class="string">&quot;header header&quot;</span> /* 需要合并的写出区域名 */ </span><br><span class="line">  <span class="string">&quot;. . &quot;</span> /* 不需要合并单元格，可以.(点)占位(...也可以用于占位) */</span><br><span class="line">  <span class="string">&quot;footer footer&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="栅格的流动性"><a href="#栅格的流动性" class="headerlink" title="栅格的流动性"></a>栅格的流动性</h2><ul>
-<li><code>grid-auto-flow: row(默认行排列)|column</code></li>
-<li><code>dense</code> – 自动填充(富裕的)区域</li>
-</ul>
-<h2 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h2><blockquote>
-<p>栅格空间小于容器空间对齐方式</p>
-</blockquote>
-<ul>
-<li><code>justify-content: start(开始)|center(居中)|end(结束)|space-(around(两边留白)|between(两边不留白)|evenly(完全平均))</code> – 水平</li>
-<li><code>align-content: start(开始)|center(居中)|end(结束)|space-(around(两边留白)|between(两边不留白)|evenly(完全平均))</code> – 垂直</li>
-</ul>
-<blockquote>
-<p>栅格元素对齐方式,元素以固定宽高为基准,自身无宽高默认撑满单元格</p>
-</blockquote>
-<ul>
-<li><code>justify-items: start(开始)|center(居中)|end(结束)|stretch(默认拉伸)</code> – 水平</li>
-<li><code>align-items: start(开始)|center(居中)|end(结束)|stretch(默认拉伸)</code> – 垂直</li>
-</ul>
-<blockquote>
-<p>栅格元素单独控制</p>
-</blockquote>
-<ul>
-<li><code>justify-self: start(开始)|center(居中)|end(结束)</code> – 水平</li>
-<li><code>align-self: start(开始)|center(居中)|end(结束)</code> – 垂直</li>
-</ul>
-<h3 id="栅格组合定义-对齐方式"><a href="#栅格组合定义-对齐方式" class="headerlink" title="栅格组合定义(对齐方式)"></a>栅格组合定义(对齐方式)</h3><ul>
-<li><code>place-content: [水平] [垂直]</code></li>
-<li><code>place-items: [水平] [垂直]</code></li>
-<li><code>place-self: [水平] [垂直]</code></li>
-</ul>
- 
+</ul> 
+      <a class="article-more-link" href="/2021/03/26/grid%E6%A0%85%E6%A0%BC%E5%B8%83%E5%B1%80/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>

@@ -827,4 +827,258 @@
         <tag>学习笔记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>指示代词</title>
+    <url>/2021/03/26/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8802%EF%BC%89/</url>
+    <content><![CDATA[<ul>
+<li><p>こ – 近</p>
+</li>
+<li><p>そ – 中</p>
+</li>
+<li><p>あ – 远</p>
+</li>
+<li><p>ど – 不定</p>
+</li>
+<li><p>こ（そ、あ、ど）れ+助词</p>
+</li>
+<li><p>こ（そ、あ、ど）の+名词</p>
+</li>
+<li><p>こ（そ、あ、ど）の+ような　– ~样的书 [书面]</p>
+</li>
+<li><p>こ（そ、あ、ど）んな　– ~样的书 [口语]</p>
+</li>
+<li><p>こ（そ、あそ、ど）こ　– 方位地点</p>
+</li>
+<li><p>こ（そ、あ、ど）ちら　– 郑重的语感[引申–可以指代人]</p>
+</li>
+<li><p>こ（そ、あ、ど）っち　– 郑重的语感[引申–可以指代人] – 【简称/简写】</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>生活兴趣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>名词谓语句</title>
+    <url>/2021/03/26/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8801%EF%BC%89/</url>
+    <content><![CDATA[<blockquote>
+<p>名词不能直接做谓语</p>
+</blockquote>
+<ul>
+<li>~だ – 是 – 常体<ul>
+<li>只接<strong>句号</strong>或<strong>终助词</strong></li>
+<li>否定要改成で</li>
+</ul>
+</li>
+<li>~ではない – 不是</li>
+<li>（か？）– 疑问 – 终助词</li>
+<li>~です　– 助动词 – 敬体</li>
+<li>~ではありません</li>
+<li>~ ですか？</li>
+<li>~ である – 演讲等正式场合 – 无否定</li>
+<li>~ であります – 无否定</li>
+<li>~ でございます – 敬语 – 无否定</li>
+<li>~ は/が – 副助词<strong>は</strong>/格助词<strong>が</strong></li>
+<li>は – 主题 – 强调<strong>后</strong>为新信息</li>
+<li>が – 强调<strong>前</strong>为新信息</li>
+<li>も – 副助词，判断、也</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>生活兴趣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>grid栅格布局</title>
+    <url>/2021/03/26/grid%E6%A0%85%E6%A0%BC%E5%B8%83%E5%B1%80/</url>
+    <content><![CDATA[<h2 id="开启grid容器"><a href="#开启grid容器" class="headerlink" title="开启grid容器"></a>开启grid容器</h2><ul>
+<li><code>display: grid</code></li>
+<li><code>display: inline-grid</code></li>
+</ul>
+<h2 id="容器划分"><a href="#容器划分" class="headerlink" title="容器划分"></a>容器划分</h2><ul>
+<li><code>grid-template-rows(columns): [数字]px 100px 200px 50px</code></li>
+<li><code>grid-template-rows(columns): [百分比]% 33% 33% 1%</code></li>
+<li><code>grid-template-rows(columns): [百分比]% 33% 33% 1%</code></li>
+<li><code>grid-template-rows(columns): repeat([重复的次数], 重复的值)</code></li>
+<li><code>grid-template-rows(columns): repeat(2, 100px 200px 50px)</code><ul>
+<li>第<strong>一</strong>行(列)和第<strong>四</strong>行(列)的宽度<code>100px</code><strong>二</strong>行(列)和第<strong>五</strong>行(列<code>20px</code><strong>三</strong>行(列)和第<strong>六</strong>行(列)为<code>80px</code></li>
+</ul>
+</li>
+<li><code>auto-fill</code>关键字表示自动填充(每个格子大小一定的情况下尽可能的占据一行的空间)</li>
+<li><code>fr</code>关键字 (fraction - 片段)–比例分配剩余的容器空间<ul>
+<li><code>grid-template-rows(columns): 200px 1fr 2fr</code>–第一格占据200px，第二格占据剩下的1/3，第三格占据剩下的2/3</li>
+</ul>
+</li>
+</ul>
+<h2 id="行-列-的间隔"><a href="#行-列-的间隔" class="headerlink" title="行(列)的间隔"></a>行(列)的间隔</h2><ul>
+<li><code>grid-row(column)-gap: 10px</code></li>
+<li><code>gap: 10px [20px]</code></li>
+</ul>
+<h2 id="放置位置"><a href="#放置位置" class="headerlink" title="放置位置"></a>放置位置</h2><h3 id="根据编号放置位置"><a href="#根据编号放置位置" class="headerlink" title="根据编号放置位置"></a>根据编号放置位置</h3><ul>
+<li><code>rows</code> 从上往下<strong>第一根</strong>线表示<code>(编号)1</code><strong>往下</strong>依次递增</li>
+<li><code>columns</code> 从左往右<strong>第一根</strong>线表示<code>(编号)1</code><strong>往下</strong>依次递增</li>
+<li><code>grid-row(column)-start:1</code> – (编号)1开始</li>
+<li><code>grid-row(column)-end:2</code> – (编号)2结束</li>
+</ul>
+<h3 id="固定命名放放位置"><a href="#固定命名放放位置" class="headerlink" title="固定命名放放位置"></a>固定命名放放位置</h3><h3 id="填入每行-列-数据时的命名"><a href="#填入每行-列-数据时的命名" class="headerlink" title="填入每行(列)数据时的命名"></a>填入每行(列)数据时的命名</h3><ul>
+<li><code>grid-template-rows(columns): [(1号线别名:row1的开始)r1s] 1fr [r1e(row1的结束) r2s(row2的开始)] 1fr [r2e r3s] 1fr [r3e]</code> </li>
+</ul>
+<h3 id="repeat重复设置时的命名"><a href="#repeat重复设置时的命名" class="headerlink" title="repeat重复设置时的命名"></a>repeat重复设置时的命名</h3><ul>
+<li><code>grid-template-rows(columns): repeat(3,[rs] 1fr [re]);</code></li>
+<li>使用<ul>
+<li><code>grid-row-start: rs 2(编号2的线作为开始);grid-row-end(编号4的线作为结束): re 4;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="根据偏移量放位置"><a href="#根据偏移量放位置" class="headerlink" title="根据偏移量放位置"></a>根据偏移量放位置</h3><ul>
+<li><code>grid-row-end: span 2(到结束偏移两根线);</code></li>
+</ul>
+<h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><ul>
+<li><code>grid-row(column): 1(编号1的线开始) / 2(编号2的线结束);</code></li>
+<li><code>grid-row(column): 1(编号1的线开始) / span 2(填充两根线的内容));</code></li>
+</ul>
+<h2 id="区域定位"><a href="#区域定位" class="headerlink" title="区域定位"></a>区域定位</h2><ul>
+<li><code>grid-area: [行开始]/[列开始]/[行结束]/[列结束]</code></li>
+</ul>
+<h3 id="area布局"><a href="#area布局" class="headerlink" title="area布局"></a>area布局</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">display</span>: grid;</span><br><span class="line">grid-template-rows: <span class="number">60px</span> <span class="number">1</span>fr <span class="number">60px</span>;</span><br><span class="line">grid-template-<span class="attribute">columns</span>: <span class="number">60px</span> <span class="number">1</span>fr;</span><br><span class="line">grid-template-areas: <span class="string">&quot;header header&quot;</span> /* 占据的区域的边线会被命名为 header-start header-end */</span><br><span class="line">  <span class="string">&quot;nav main&quot;</span></span><br><span class="line">  <span class="string">&quot;footer footer&quot;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用时<code>grid-area: [区域名称]header</code></li>
+</ul>
+<h3 id="area布局优化"><a href="#area布局优化" class="headerlink" title="area布局优化"></a>area布局优化</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">display</span>: grid;</span><br><span class="line">grid-template-rows: <span class="number">60px</span> <span class="number">1</span>fr <span class="number">60px</span>;</span><br><span class="line">grid-template-<span class="attribute">columns</span>: <span class="number">60px</span> <span class="number">1</span>fr;</span><br><span class="line">grid-template-areas: <span class="string">&quot;header header&quot;</span> /* 需要合并的写出区域名 */ </span><br><span class="line">  <span class="string">&quot;. . &quot;</span> /* 不需要合并单元格，可以.(点)占位(...也可以用于占位) */</span><br><span class="line">  <span class="string">&quot;footer footer&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="栅格的流动性"><a href="#栅格的流动性" class="headerlink" title="栅格的流动性"></a>栅格的流动性</h2><ul>
+<li><code>grid-auto-flow: row(默认行排列)|column</code></li>
+<li><code>dense</code> – 自动填充(富裕的)区域</li>
+</ul>
+<h2 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h2><blockquote>
+<p>栅格空间小于容器空间对齐方式</p>
+</blockquote>
+<ul>
+<li><code>justify-content: start(开始)|center(居中)|end(结束)|space-(around(两边留白)|between(两边不留白)|evenly(完全平均))</code> – 水平</li>
+<li><code>align-content: start(开始)|center(居中)|end(结束)|space-(around(两边留白)|between(两边不留白)|evenly(完全平均))</code> – 垂直</li>
+</ul>
+<blockquote>
+<p>栅格元素对齐方式,元素以固定宽高为基准,自身无宽高默认撑满单元格</p>
+</blockquote>
+<ul>
+<li><code>justify-items: start(开始)|center(居中)|end(结束)|stretch(默认拉伸)</code> – 水平</li>
+<li><code>align-items: start(开始)|center(居中)|end(结束)|stretch(默认拉伸)</code> – 垂直</li>
+</ul>
+<blockquote>
+<p>栅格元素单独控制</p>
+</blockquote>
+<ul>
+<li><code>justify-self: start(开始)|center(居中)|end(结束)</code> – 水平</li>
+<li><code>align-self: start(开始)|center(居中)|end(结束)</code> – 垂直</li>
+</ul>
+<h3 id="栅格组合定义-对齐方式"><a href="#栅格组合定义-对齐方式" class="headerlink" title="栅格组合定义(对齐方式)"></a>栅格组合定义(对齐方式)</h3><ul>
+<li><code>place-content: [水平] [垂直]</code></li>
+<li><code>place-items: [水平] [垂直]</code></li>
+<li><code>place-self: [水平] [垂直]</code></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人称代词</title>
+    <url>/2021/03/28/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8803%EF%BC%89/</url>
+    <content><![CDATA[<ul>
+<li>第一人称<ul>
+<li>私（わたし）  – 女性（生活中）– 男女通用（正事）</li>
+<li>私（わたくし） – 正式礼貌</li>
+<li>僕 – 男</li>
+<li>俺 – 上对下</li>
+<li>俺様 – 男</li>
+<li>あたし – 女</li>
+<li>うち – （原关西方言，现女性使用）</li>
+</ul>
+</li>
+<li>第二人称<ul>
+<li>あなた – 避免对上级使用 （有‘亲爱的’，夫妻间）</li>
+<li>君 – （男性） 对同辈或晚辈使用</li>
+<li>お前 – （男性）同辈或晚辈（更随意）</li>
+<li>あんた – （あなた 演化而来，礼貌程度比あなた 低）</li>
+<li>僕 – （对不认识的小孩可能会用）</li>
+</ul>
+</li>
+<li>第三人称<ul>
+<li>人：<ul>
+<li>彼（他）　彼女（他）　こ（这）/そ（那）/あ（那）+ いつ（家伙）</li>
+</ul>
+</li>
+<li>物：<ul>
+<li>こ（这）/そ（那）/あ（那）/ど（哪）+れ（个）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>复数表现<ul>
+<li>私たち　– 礼貌程度（中性，不表现尊敬，不表现不尊敬）</li>
+<li>あなたがた   –礼貌程度（高）</li>
+<li>彼ら  – 礼貌程度（低）他们</li>
+<li>彼女たち/ら – 她们</li>
+<li>私ども – 自谦（礼貌程度很高）</li>
+</ul>
+</li>
+<li>敬称<ul>
+<li>様（店家常用）　</li>
+<li>さん（平时常用）　</li>
+<li>君（同辈晚辈，工作场合女性也可）　</li>
+<li>ちゃん（亲昵）殿（古老的感觉，称谓+殿，上对下）　</li>
+<li>氏（姓氏+氏表尊敬）</li>
+</ul>
+</li>
+<li>呼び捨て<ul>
+<li>姓（名字），舍去结尾敬称<ul>
+<li>表现为上对下时，圈子内对圈子外提及圈子内（例如公司和公司之间，向对方提及自身公司内部人员时不加敬称–[日本语言文化传统]）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>生活兴趣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>形容词、形容动词（上）</title>
+    <url>/2021/03/29/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8804%EF%BC%89/</url>
+    <content><![CDATA[<ul>
+<li><p>形容词</p>
+<blockquote>
+<p>谓语 自身直接做谓语 + です 表礼貌</p>
+<p>定语 直接接名词</p>
+<p>＋终助词 表终止语句，不加其它句子成分 です除外</p>
+<p>（本身不变的词语，被称为体言）</p>
+</blockquote>
+</li>
+<li><p>形容动词</p>
+<blockquote>
+<p>だ（终止形）–&gt; な（连体形）</p>
+<p>静かだ　</p>
+<p>静かです</p>
+<p>静かな教室</p>
+</blockquote>
+</li>
+<li><p>用言</p>
+<blockquote>
+<p>形容词、形容动词、动词、助动词、小句</p>
+</blockquote>
+</li>
+<li><p>连用形</p>
+<ul>
+<li> い　–&gt;　く（形容词）+ 用言</li>
+<li>だ　–&gt;　で （形容动词）+ 用言</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>生活兴趣</tag>
+      </tags>
+  </entry>
 </search>

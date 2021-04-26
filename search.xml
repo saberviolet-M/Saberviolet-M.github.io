@@ -1138,4 +1138,209 @@
         <tag>生活兴趣</tag>
       </tags>
   </entry>
+  <entry>
+    <title>动词</title>
+    <url>/2021/03/31/%E6%AF%8F%E6%97%A5%E6%97%A5%E8%AF%AD%EF%BC%8806%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="构造"><a href="#构造" class="headerlink" title="构造"></a>构造</h3><ul>
+<li>词干 + 语态（主动、被动） + 体（动作完成、动作进行、动作结果存留） + 肯/否 + 时态</li>
+<li>読ま + れ + てい + なかっ + た （还没有被读过）</li>
+</ul>
+<h3 id="自动词-他动词"><a href="#自动词-他动词" class="headerlink" title="自动词/他动词"></a>自动词/他动词</h3><ul>
+<li>自动词 – 不需要宾语（不及物动词）[动作、状态]</li>
+<li>他动词 – 需要宾语（及物动词）[行为]</li>
+</ul>
+<blockquote>
+<p><strong>动词自、他动词中的词性偏向</strong></p>
+<p>他动词 &gt;&gt;[偏向]&gt;&gt; [自动]</p>
+<p>[他动词]す &gt;&gt; eる &gt;&gt; aる[自动]</p>
+<p>[他动词]eる &gt;&gt; 五段动词[他动词]</p>
+<p>[他动词]壊す &gt;&gt; 壊れる[自动]</p>
+<p>[他动词]始める &gt;&gt; 始まる[自动]</p>
+<p>[他动词]つける &gt;&gt; つく[自动]</p>
+<p><strong>但有很多例外</strong></p>
+</blockquote>
+<ul>
+<li>~が[自动]</li>
+<li>~を[他动词]</li>
+</ul>
+<h3 id="动词活用（五段动词）"><a href="#动词活用（五段动词）" class="headerlink" title="动词活用（五段动词）"></a>动词活用（五段动词）</h3><ul>
+<li>未然形  –  <strong>あ</strong>  （あ　&gt;&gt;&gt;　わ）</li>
+<li>连用形  –  <strong>い</strong>  （**+**用言、助动词、小句）</li>
+<li>终止形<em>连体形  –  <strong>う</strong>  （*</em>+**名、代 == 体言）</li>
+<li>假定形*命令形  –  <strong>え</strong></li>
+<li>未然形  –  <strong>お</strong></li>
+</ul>
+<h3 id="动词活用（一段动词）【汉字词-る是五段动词】"><a href="#动词活用（一段动词）【汉字词-る是五段动词】" class="headerlink" title="动词活用（一段动词）【汉字词+る是五段动词】"></a>动词活用（一段动词）【汉字词+る是五段动词】</h3><ul>
+<li>未然形  –   <strong>い、え</strong></li>
+<li>连用形  –   <strong>い、え</strong></li>
+<li>终止形*连体形  –  <strong>い、え + る</strong></li>
+<li>假定形*命令形  –  <strong>い、え + れ</strong></li>
+<li>未然形  –  <strong>い、え + ろ/よ</strong></li>
+</ul>
+<h3 id="动词活用（カ变、サ变动词）"><a href="#动词活用（カ变、サ变动词）" class="headerlink" title="动词活用（カ变、サ变动词）"></a>动词活用（カ变、サ变动词）</h3><ul>
+<li>未然形  –   来(こ)  [カ变] <code>||</code>   し、せ、さ[サ变]</li>
+<li>连用形  –  来(き) [カ变] <code>||</code>    し[サ变]</li>
+<li>终止形*连体形  –  来(く)る <code>||</code>    [カ变]  する[サ变]</li>
+<li>假定形*命令形  –  来(く)れ <code>||</code>    [カ变] すれ[サ变]</li>
+<li>未然形  –  来(こ)い  [カ变] <code>||</code>    しろ/せよ[サ变]</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>生活兴趣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Code State</title>
+    <url>/2021/04/10/%E7%8A%B6%E6%80%81%E7%A0%81/</url>
+    <content><![CDATA[<h3 id="2xx"><a href="#2xx" class="headerlink" title="2xx"></a>2xx</h3><table>
+<thead>
+<tr>
+<th align="center">state code</th>
+<th align="center">原因短语</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">200</td>
+<td align="center">OK</td>
+<td align="center">服务端正确接收并处理</td>
+</tr>
+<tr>
+<td align="center">201</td>
+<td align="center">Created</td>
+<td align="center">post、put等添加请求实现</td>
+</tr>
+<tr>
+<td align="center">202</td>
+<td align="center">Accepted</td>
+<td align="center">服务器正确接收，但尚未完成，且不保证完成</td>
+</tr>
+<tr>
+<td align="center">204</td>
+<td align="center">No Content</td>
+<td align="center">成功了，但是响应报文没有主体部分</td>
+</tr>
+<tr>
+<td align="center">206</td>
+<td align="center">Partial Content</td>
+<td align="center">范围请求成功（分段下载，断点续传）</td>
+</tr>
+</tbody></table>
+<h3 id="3xx"><a href="#3xx" class="headerlink" title="3xx"></a>3xx</h3><table>
+<thead>
+<tr>
+<th align="center">state code</th>
+<th align="center">原因短语</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">301</td>
+<td align="center">Moved Permanently</td>
+<td align="center">永久重定向（http-&gt;https）</td>
+</tr>
+<tr>
+<td align="center">302</td>
+<td align="center">Found</td>
+<td align="center">临时重定向(登录操作-&gt;登录页-&gt;登录完了跳回来)</td>
+</tr>
+<tr>
+<td align="center">303</td>
+<td align="center">See Other</td>
+<td align="center">post被请求成功过了，用get请求</td>
+</tr>
+<tr>
+<td align="center">304</td>
+<td align="center">Not Modified</td>
+<td align="center">认证资源有效（协商缓存），不返回数据</td>
+</tr>
+<tr>
+<td align="center">307</td>
+<td align="center">Temporary Redirect</td>
+<td align="center">post没处理，正常post请求</td>
+</tr>
+</tbody></table>
+<h3 id="4xx"><a href="#4xx" class="headerlink" title="4xx"></a>4xx</h3><table>
+<thead>
+<tr>
+<th align="center">state code</th>
+<th align="center">原因短语</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">400</td>
+<td align="center">Bad Request</td>
+<td align="center">请求报文存在语法错误</td>
+</tr>
+<tr>
+<td align="center">401</td>
+<td align="center">Unauthorized</td>
+<td align="center">没有权限</td>
+</tr>
+<tr>
+<td align="center">403</td>
+<td align="center">Forbidden</td>
+<td align="center">请求资源被服务器拒绝</td>
+</tr>
+<tr>
+<td align="center">404</td>
+<td align="center">Not Found</td>
+<td align="center">服务器上没有资源</td>
+</tr>
+<tr>
+<td align="center">408</td>
+<td align="center">Request Timeout</td>
+<td align="center">客户端超时</td>
+</tr>
+<tr>
+<td align="center">409</td>
+<td align="center">Confict</td>
+<td align="center">请求资源冲突</td>
+</tr>
+</tbody></table>
+<h3 id="5xx"><a href="#5xx" class="headerlink" title="5xx"></a>5xx</h3><table>
+<thead>
+<tr>
+<th align="center">state code</th>
+<th align="center">原因短语</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">500</td>
+<td align="center">Internal Server Error</td>
+<td align="center">服务器执行错误</td>
+</tr>
+<tr>
+<td align="center">501</td>
+<td align="center">Not Implemented</td>
+<td align="center">超出服务器范围，不支持某个方法</td>
+</tr>
+<tr>
+<td align="center">502</td>
+<td align="center">Bad Gateway</td>
+<td align="center">代理服务器请求远端服务器无响应</td>
+</tr>
+<tr>
+<td align="center">503</td>
+<td align="center">Service Unavailable</td>
+<td align="center">服务器超载，停机维护</td>
+</tr>
+<tr>
+<td align="center">504</td>
+<td align="center">Gateway Time-out</td>
+<td align="center">代理服务器请求远端服务器超时</td>
+</tr>
+<tr>
+<td align="center">505</td>
+<td align="center">Http Version Not Supported</td>
+<td align="center">服务器不支持，或拒绝支持请求的http版本</td>
+</tr>
+</tbody></table>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
 </search>
